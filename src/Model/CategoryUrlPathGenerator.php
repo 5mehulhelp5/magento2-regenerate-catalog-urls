@@ -15,7 +15,7 @@ class CategoryUrlPathGenerator extends \Magento\CatalogUrlRewrite\Model\Category
      *
      * @return bool
      */
-    protected function isNeedToGenerateUrlPathForParent($category): bool
+    protected function isNeedToGenerateUrlPathForParent(Category $category): bool
     {
         /* Force true when command is run from the CLI */
         if (PHP_SAPI === 'cli') {
