@@ -74,7 +74,7 @@ class RegenerateCmsPageUrlCommand extends AbstractRegenerateCommand
     /**
      * @inheritdoc
      */
-    protected function configure()
+    protected function configure(): void
     {
         $this->setName('regenerate:cms-page:url')
             ->setDescription('Regenerate url for cms pages.')
